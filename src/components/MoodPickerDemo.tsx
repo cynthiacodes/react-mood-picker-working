@@ -5,42 +5,21 @@ function MoodPickerDemo(): JSX.Element {
     useState("confused");
 
   const handleMoodChangeToHappy = () => {
-    const nextMood = "happy";
-    queueRerenderWithNewMoodValue(nextMood);
-    console.log(
-      "😀 queued a rerender with mood as",
-      nextMood,
-      "but in this render it is still",
-      moodValueFromCurrentRender
-    );
+    queueRerenderWithNewMoodValue("happy");
+    
   };
 
   const handleMoodChangeToConfused = () => {
-    const nextMood = "confused";
-    queueRerenderWithNewMoodValue(nextMood);
-    console.log(
-      "🤔 queued a rerender with mood as",
-      nextMood,
-      "but in this render it is still",
-      moodValueFromCurrentRender
-    );
+    queueRerenderWithNewMoodValue("confused");
+    
   };
 
   const handleMoodChangeToSad = () => {
-    const nextMood = "sad";
-    queueRerenderWithNewMoodValue(nextMood);
-    console.log(
-      "😢 queued a rerender with mood as",
-      nextMood,
-      "but in this render it is still",
-      moodValueFromCurrentRender
-    );
+    queueRerenderWithNewMoodValue("sad");
+    
   };
 
-  console.log(
-    "Component is rendering with a mood value of",
-    moodValueFromCurrentRender
-  );
+
 
   return (
     <>
