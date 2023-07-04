@@ -28,6 +28,9 @@ function MoodPickerDemo(): JSX.Element {
       <button onClick={handleMoodChangeToHappy}>😀</button>
       <button onClick={handleMoodChangeToConfused}>🤔</button>
       <button onClick={handleMoodChangeToSad}>😢</button>
+      <button onClick={()=> queueRerenderWithNewMoodValue("tired") }>😴</button>
+      <button onClick={()=> queueRerenderWithNewMoodValue("Sick") }>🤕</button>
+      <button onClick={()=> queueRerenderWithNewMoodValue("Fabulous")}>💃🏽</button>
     </>
   );
 }
